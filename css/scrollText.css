@@ -1,0 +1,33 @@
+@charset "utf-8";
+#wrapper{
+    display:flex; flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+    gap:50vmax;
+    position:relative;
+    padding:50vmax 0;
+}
+
+/* [clipText] */
+.clipText{
+    display:flex; flex-flow:column nowrap;
+    gap:20px 0;
+    position:relative;
+    text-align:center; font-size:5vmin; font-weight:bold; letter-spacing:-.03em;
+    text-transform:uppercase;}
+
+    .clipText p{
+        position:relative; overflow:hidden;
+        padding:0 1em;
+        line-height:1;
+        background:rgb(66, 77, 106); color:#fff;}
+
+    .clipText p span{
+        display:inline-block;
+        position:relative;
+        transform:translateY(100%);
+        transition:transform .3s 0s;
+    }
+    .clipText.on p span{
+        transform:translateY(0);
+        transition:transform .3s var(--delay);
+    }
