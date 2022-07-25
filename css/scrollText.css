@@ -4,7 +4,7 @@
     justify-content:center; align-items:center;
     gap:50vmax;
     position:relative;
-    padding:50vmax 0;
+    padding:25vmax 0 50vmax 0;
 }
 
 /* [clipText] */
@@ -29,5 +29,8 @@
     }
     .clipText.on p span{
         transform:translateY(0);
-        transition:transform .3s var(--delay);
-    }
+        transition:transform .3s var(--delay);}
+
+    /* 색깔 변경 */
+    .clipText.ver2 p{background:transparent; color:inherit;}
+    .clipText.ver2:not(.on) p span{transform:translateY(200%);}
