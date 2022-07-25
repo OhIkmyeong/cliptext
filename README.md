@@ -1,0 +1,2 @@
+# cliptext
+clipText
